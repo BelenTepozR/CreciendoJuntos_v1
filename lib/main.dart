@@ -65,7 +65,7 @@ class PantallaInicioState extends State<PantallaInicio>{
             borderSide: const BorderSide(color: Colors.white, width: 0.0),
             borderRadius: BorderRadius.circular(100.0),
           ),          
-          labelText: '   Buscar Nombre Planta',
+          labelText: '   Ecribir  Nombre Planta',
           labelStyle: TextStyle(
             fontSize: 20,
             color: Colors.grey[350],
