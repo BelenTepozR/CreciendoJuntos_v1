@@ -31,7 +31,7 @@ class PantallaInicioState extends State<PantallaInicio>{
             children: [
               IconButton(
                 icon: Icon(Icons.info_outline,size: 30, color: Color.fromRGBO(60,132,120, 1)),
-                tooltip: 'Acerca de',
+                tooltip: 'About of',
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute<Null>( 
                     builder: (BuildContext context){
