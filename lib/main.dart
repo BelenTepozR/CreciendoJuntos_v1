@@ -147,7 +147,8 @@ Widget _buildDecoratedImageM(BuildContext context) => GestureDetector(
         children: [
           botonesImgM(context,'https://d7lju56vlbdri.cloudfront.net/var/ezwebin_site/storage/images/_aliases/img_1col/noticias/estos-son-los-lugares-de-expansion-de-las-plantas-exoticas/5478919-1-esl-MX/Estos-son-los-lugares-de-expansion-de-las-plantas-exoticas.jpg'),
           botonesImg('https://estaticos.muyinteresante.es/uploads/images/pyr/56a08e7b5bafe89a9bcdfea8/giro-plantas_0.jpg','https://agriculturers.com/wp-content/uploads/2020/06/Como-se-clasifican-las-plantas.jpg'),
-         // botonesImg('https://www.elmueble.com/medio/2019/03/27/adianthum_37d94a61_800x800.jpg','https://i.pinimg.com/originals/50/e0/6e/50e06e64a01db9b6c6d9a397a17483b6.jpg'),
+          botonesImg('https://www.elmueble.com/medio/2019/03/27/adianthum_37d94a61_800x800.jpg','https://i.pinimg.com/originals/50/e0/6e/50e06e64a01db9b6c6d9a397a17483b6.jpg'),
+          botonesImg('https://estaticos.muyinteresante.es/uploads/images/pyr/56a08e7b5bafe89a9bcdfea8/giro-plantas_0.jpg','https://agriculturers.com/wp-content/uploads/2020/06/Como-se-clasifican-las-plantas.jpg'),
           botonesImg('https://www.elmueble.com/medio/2019/03/27/adianthum_37d94a61_800x800.jpg','https://i.pinimg.com/originals/50/e0/6e/50e06e64a01db9b6c6d9a397a17483b6.jpg'),
 
         ],
@@ -159,14 +160,13 @@ Widget _buildDecoratedImageM(BuildContext context) => GestureDetector(
  @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Pantallas ',    
+        title: 'Pantallas',    
         home: Scaffold(
-          body:
-          SingleChildScrollView(      
-            child: Container(
-              height: MediaQuery.of(context).size.height,
-              margin: EdgeInsets.all(0),
-              decoration: BoxDecoration(color: Color.fromRGBO(199,218,196, 1)),//color de fondo
+          body:Container(
+            height: MediaQuery.of(context).size.height,
+            margin: EdgeInsets.all(0),
+            decoration: BoxDecoration(color: Color.fromRGBO(199,218,196, 1)),//color de fondo
+            child:  SingleChildScrollView(
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,//se alinean al principio los lementos que se agreguen al contenedor
                 children: [
