@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';//para poder utilizar las fuentes de google https://fonts.google.com/ tienen que agregar la dependencia en el archivo pubspec.yaml
 import 'package:pantalla_principal/acerca_de.dart';
+import 'package:pantalla_principal/infomacion_planta.dart';
 import 'agregar_planta.dart';
 
 class PlantasUsuario extends StatelessWidget {
@@ -100,7 +101,12 @@ Widget _buildDecoratedImage(String imageIndex) => GestureDetector(
       ),
     ),
   ),
-  onTap: () {print("Planta $imageIndex");},
+  onTap: () {
+    Navigator.of(context).push(MaterialPageRoute<Null>( 
+      builder: (BuildContext context){
+      return new InfomacionPlanta();
+    }));   
+  },
 );
 //es sismilar al metodo anterior pero este es para el boton de agregar
 Widget _buildDecoratedImageM(BuildContext context) => GestureDetector(

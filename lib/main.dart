@@ -2,7 +2,6 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:pantalla_principal/acerca_de.dart';
 import 'package:pantalla_principal/plantas_usuario.dart';
 import 'package:pantalla_principal/registrarse.dart';
 
